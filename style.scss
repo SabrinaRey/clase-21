@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:700&display=swap');
+
+$main-color: #7452a3;
+$secondary-color: #99f7e2;
+
+body {
+  margin: 0
+}
+
+.bullets {
+  width: 12px;
+  height: 153px;
+  object-fit: contain;
+  position: fixed;
+  right: 48px;
+  top: 50%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $main-color;
+  padding: 40px 150px;
+  height: 1024px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.basic {
+  font-family: SourceSansPro;
+  font-size: 36px;
+  font-weight: 600;
+  color: $secondary-color;
+}
+
+main h1 {
+  font-family: LibreBaskerville;
+  font-size: 64px;
+  line-height: 1.5;
+  color: $secondary-color;
+  width: 70%;
+}
+
+@mixin paragraph {
+  font-family: SourceSansPro;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 2;
+}
+main p {
+  @include paragraph;
+   color: #ffffff;
+  width: 70%;
+}
+
+.mouse {
+  display: flex;
+  justify-content: center;
+}
+
+.products-list {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  background-color:#fff;
+  padding: 100px 0px 100px 0px;
+  height: 1024px;
+}
+
+.product-image {
+  width: 802px;
+  height: 517px;
+  object-fit: contain;
+  padding-top:150px;
+}
+.products {
+  width: 50%;
+  margin-left: 30px;
+}
+ .products h2 {
+  width: 458px;
+  height: 208px;
+  font-family: LibreBaskerville;
+  font-size: 46px;
+    line-height: 1.5;
+    color: $main-color;
+ }
+ .products p {
+  width: 458px;
+  height: 191px;
+  @include paragraph;
+    color: #060606;
+ }
+  a {
+    width: 293px;
+  height: 41px;
+  font-family: Helvetica;
+  font-size: 18px;
+    line-height: 2;
+    color: #67b3ff;
+    text-decoration: none;
+  }
+
+
+
+
+
